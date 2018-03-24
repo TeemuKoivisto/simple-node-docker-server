@@ -45,4 +45,4 @@ Just testing a setup with Node.js and Docker.
 
 `docker-run` creates a container from the image and binds it to port 5555
 
-`docker-rm-containers` stops and removes all the containers built from this image
+`docker-rm` stops and removes all the containers built from this image
