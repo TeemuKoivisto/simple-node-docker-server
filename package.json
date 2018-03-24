@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-docker-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeemuKoivisto/simple-node-docker-server.git"
+  },
+  "author": "Teemu Koivisto",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "winston": "^2.4.1"
+  }
+}
