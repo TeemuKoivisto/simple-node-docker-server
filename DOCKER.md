@@ -86,11 +86,14 @@ Lists running processes
 Lists stopped and running processes  
 `docker ps -a`
 
-Creates a container using org/image and opens up a port from its port 8080 to localhost:8888 (or Docker machine)  
+Creates a container using org/image and opens up a port from its port 8080 to localhost:8888 (or Docker machine). This container will stop immediately after you exit it from terminal.
 `docker run -it org/image -p 8888:8080`
 
 Creates a container with volume attached to it  
 `docker run -it -p 8888:8888 -v /Users/teemu/datascience:/usr/src/data jupyter/tensorflow-notebook`
+
+Run this container in background (-d argument) and override the default command with `bash`. Now you can access it with `docker exec -it <sha> bash` and look around to eg. debug.
+`docker run -d teemukoivisto/my-node-bootstrap:0.1.0 bash`
 
 Stops an image that has ID starting with 'fe4ad'  
 `docker stop f4ead`
